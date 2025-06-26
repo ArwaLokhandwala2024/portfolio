@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Graphic Designer Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+      color: #b03a70;
+    }
+
+    .navbar {
+      background-color: #fff0f5;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #b03a70 !important;
+    }
+
+    .navbar-brand:hover,
+    .nav-link:hover {
+      color: #8b2f59 !important;
+    }
+
+    .section-padding {
+      padding: 60px 0;
+    }
+
+    .card {
+      border: 1px solid #f6d4df;
+      border-radius: 12px;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .card-img-top {
+      height: 300px;
+      object-fit: cover;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    #about,
+    #skills,
+    #contact {
+      background-color: #fff8fa;
+    }
+
+    #projects {
+      background-color: #fff0f5;
+    }
+
+    .btn-pink {
+      background-color: #d96b97;
+      color: white;
+      border: none;
+    }
+
+    .btn-pink:hover {
+      background-color: #c05883;
+    }
+
+    footer {
+      background-color: #b03a70;
+    }
+
+    footer p {
+      color: #fff0f5;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Introduction (Image Left, Text Right) -->
+  <section class="section-padding" style="margin-top: 70px; background-color: #fff0f5;">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Profile Image -->
+        <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+          <img src="picture.jpg" alt="My Photo" class="img-fluid rounded-circle" style="max-width: 250px; border: 5px solid #f2cdd6;">
+        </div>
+
+        <!-- Intro Text -->
+        <div class="col-md-8 text-center text-md-start">
+          <h1 class="fw-bold">Arwa Lokhandwala</h1>
+          <p class="text-muted fs-5"> Graphic Designer | Visual Storyteller | Digital Artist</p>
+          <p class="text-muted">
+            Hi! I'm Arwa. A second year student at Atlas Skilltech University-ISDI pursuing my degree in B.Des Communication Design.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- About Section -->
+  <section id="about" class="section-padding text-center">
+    <div class="container">
+      <h2 class="mb-4">About Me</h2>
+      <p class="mx-auto" style="max-width: 700px;">
+        I am a 19 year old Mumbai based Graphic designer who enjoys working on new and exciting projects . I have graduated 12th grade from <b>Mithibai College of Arts</b> and completed 10th grade from <b>Apostolic Carmel High School</b>.<br>
+        For as long as I can remember I have had great interest in Art and observing the little details around me in everything that cathces my eye.
+      </p>
+    </div>
+  </section>
+
+   <!-- Skills & Experience -->
+  <section id="skills" class="section-padding text-center">
+    <div class="container">
+      <h2 class="mb-4">Experience & Skills</h2>
+      <p class="mx-auto mb-5" style="max-width: 750px;">
+        With over 5 years in the design industry, I have worked across diverse domains including branding, editorial design, digital illustration, and UI/UX. I’m fluent in industry-standard tools and enjoy blending creativity with precision.
+      </p>
+
+      <div class="row justify-content-center g-4">
+        <!-- Example Skill Icons -->
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="photoshop.png" alt="Photoshop" class="img-fluid" style="max-height: 60px;">
+          <p class="mt-2 small text-muted">Photoshop</p>
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="illustrator.png" alt="Illustrator" class="img-fluid" style="max-height: 60px;">
+          <p class="mt-2 small text-muted">Illustrator</p>
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="figma.png" alt="Figma" class="img-fluid" style="max-height: 60px;">
+          <p class="mt-2 small text-muted">Figma</p>
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="indesign.png" alt="InDesign" class="img-fluid" style="max-height: 60px;">
+          <p class="mt-2 small text-muted">InDesign</p>
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="maya.png" alt="Autodesk Maya" style="max-height: 60px;">
+          <p class="mt-2 small text-muted">Autodesk Maya</p>
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="canva.png" alt="Canva" class="img-fluid" style="max-height: 60px;">
+          <p class="mt-2 small text-muted">Canva</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <h2 class="text-center mb-5">Recent Projects</h2>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <img src="branding.jpg" class="card-img-top" alt="Branding">
+            <div class="card-body">
+              <h5 class="card-title">Branding & Packaging</h5>
+              <p class="card-text text-muted">Redesigned the packaging for a beverage brand called BIR. This was dine to give it a new and refershing look with a logo redign and it's integration in the packaging of the product.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <img src="glossary.jpg" class="card-img-top" alt="Editorial Design">
+            <div class="card-body">
+              <h5 class="card-title">Editorial (Glossary) Design</h5>
+              <p class="card-text text-muted">A curated Glossary reflecting rebellious art movements and their significance in the world of design throughout history.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <img src="website.png" class="card-img-top" alt="web-design">
+            <div class="card-body">
+              <h5 class="card-title">Web Design</h5>
+              <p class="card-text text-muted">Jwellery Portfolio website from scratch for a family Jwellery brand called Rozsa Aurum to showcase their designs and get in touch with clients.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <img src="typo.png" class="card-img-top" alt="Typography">
+            <div class="card-body">
+              <h5 class="card-title">Typography</h5>
+              <p class="card-text text-muted">A poster created using pure Typography to convey the history of the font Aviner with a unique blend of designer Massimo Vignelli's art style.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" class="section-padding text-center">
+  <div class="container">
+    <h2 class="mb-4">Contact</h2>
+    <p class="mb-4">Let’s connect! I’m open to freelance projects, collaborations, or creative chats.</p>
+
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-6">
+        <ul class="list-unstyled text-start text-md-center">
+          <li class="mb-2">
+            📧 Email: <a href="mailto:arwa.lokhandwala.bdes2027@atlasskilltech.university" class="text-decoration-none text-muted">arwa.lokhandwala.bdes2027@atlasskilltech.university</a>
+          </li>
+          <li class="mb-2">
+            💼 LinkedIn: <a href="www.linkedin.com/in/arwa-lokhandwala-13420a2ba" target="_blank" class="text-decoration-none text-muted">linkedin.com/in/arwa-lokhandwala</a>
+          </li>
+          <li class="mb-2">
+            📞 Phone: <a href="tel:+917021867730" class="text-decoration-none text-muted">+91 7021867730</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-pink w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="text-center py-3">
+    <p class="mb-0">© 2022 Arwa Lokhandwala | Design Portfolio </p>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>`   
